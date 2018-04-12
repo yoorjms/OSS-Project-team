@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+  int num1 = 0; // 첫번째 숫자
+  int num2 = 0; // 두번째 숫자
+  int value = 0; //결과값
+  char a = 0; //연산자
+  
+  printf("수식을 입력 하시오 : ");
+  scanf(" %d %c %d", &num1, &a, &num2);
+  
+  switch(a) {
+  
+    case '+' : 
+      value = num1 + num2;
+      printf("%d %c %d = %d", num1, a, num2, value);
+      break;
+      
+    default: 
+      printf("계산할 수 없음");
+      break;
+  
+  }
+  
+  return 0;
+
+}
