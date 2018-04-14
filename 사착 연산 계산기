@@ -27,7 +27,7 @@ int main(void) {
       break;
       
    case '/':
-      printf("%d%d = %lf", num1, num2, (double)num1/num2);
+      printf("%d/%d = %lf", num1, num2, (double)num1/num2);
       break;
       
    default: 
