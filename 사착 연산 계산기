@@ -21,6 +21,11 @@ int main(void) {
       printf(" %d %c %d = %d " , num1, a num2, value );
       break;
       
+   case '*' :
+      value = num1 * num2;
+      printf(" %d %c %d = %d " , num1, a num2, value );
+      break;
+      
     default: 
       printf("계산할 수 없음");
       break;
