@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1">
+		<title>자바칩프라푸치노</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/menu.css">
+	</head>
+	<body>
+		<style type="text/css">
+			.jumbotron{
+				background-image: url('images/boostrapBackground.jpg');
+				background-size: cover;
+				text-shadow: black 0.2em 0.2em 0.2em;
+				color: white;
+			}
+	    </style>
+	    <nav class="navbar navbar-default">
+	    	<div class="container-fluid">
+	    		<div class="navbar-header">
+	    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+	    					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    				    <span class="sr-only"></span>
+	    				    <span class="icon-bar"></span>
+	    				    <span class="icon-bar"></span>
+	    				    <span class="icon-bar"></span>
+	    				    <span class="icon-bar"></span>
+	    				</button>
+	    				<a class="navbar-brand" href="index.html">HOME</a>
+	    	    </div>
+	    	    <div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+	    	    	<ul class="nav navbar-nav">
+	    	    			<li class="active"><a href="index.html">소개<span class="sr-only"></span></a></li>
+	    	    			<li><a href="instructor.html">개발자들</a></li>
+	    	    			<li><a href="admin.html">관리</a></li>
+	    	    			<li class="dropdown">
+	    	    				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+	    	    					aria-haspopup="true" aria-expanded="false">쇼핑몰<span class="caret"></span></a>
+	    	    				<ul class="dropdown-menu">
+	    	    					<li><a href="#">shoppingmall_1</a></li>
+	    	    					<li><a href="#">shoppingmall_2</a></li>
+	    	    					<li><a href="#">shoppingmall_3</a></li>
+	    	    					<li><a href="#">shoppingmall_4</a></li>
+	    	    					<li><a href="#">shoppingmall_5</a></li>
+	    	    				</ul>
+	    	    			</li>
+	    	    	</ul>
+	    	    	<form class="navbar-form navbar-left">
+	    	    		<div class="form-group">
+	    	    			<input type="text" class="form-control" placeholder="상품명을 입력하세요.">
+	    	    		</div>
+	    	    		<button type="submit" class="btn btn-default">검색</button>
+	    	    	</form>
+	    	    	<ul class="nav navbar-nav navbar-right">
+	    	    		<li class="dropdown">
+	    	    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+	    	    				aria-haspopup="true" aria-expanded="false">접속하기<span class="caret"></span></a>
+	    	    				<ul class="dropdown-menu">
+	    	    					<li><a href="loginForm.html">로그인</a></li>
+	    	    					<li><a href="registerForm.html">회원가입</a></li>
+	    	    					
+	    	    				</ul>
+	    	    		</li>
+	    	    	</ul>
+	    	    </div>
+	        </div>
+	    </nav>
+			  
+
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list"></span>쇼핑몰 리스트
+                    <div class="pull-right action-buttons">
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-cog" style="margin-right: 0px;"></span>
+                            </button>
+                            <ul class="dropdown-menu slidedown">
+                                <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span>Edit</a></li>
+                                <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-trash"></span>Delete</a></li>
+                                <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-flag"></span>Flag</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <label for="checkbox">
+                                    <h4>쇼핑몰 1</h4>
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox2" />
+                                <label for="checkbox2">
+                                    <h4>쇼핑몰 2</h4>
+                                </label>
+                            </div>
+                           <div class="pull-right action-buttons">
+                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox3" />
+                                <label for="checkbox3">
+                                    <h4>쇼핑몰 3</h4>
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox4" />
+                                <label for="checkbox4">
+                                   <h4>쇼핑몰 4</h4>
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox5" />
+                                <label for="checkbox5">
+                                    <h4>쇼핑몰 5</h4>
+                                </label>
+                            </div>
+                           <div class="pull-right action-buttons">
+                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="http://www.jquery2dotnet.com" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>admin</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="pagination pagination-sm pull-right">
+                                <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                                <li class="active"><a href="javascript:void(0)">1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="admin-user.html">2</a></li>
+                               
+                                <li><a href="javascript:void(0)">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+
+	<!-- 이 위로 작성 할것.-->   
+		<footer style="background-color: #000000; color: #ffffff">
+				<div class="container">
+					<br>
+					<div class="row">
+						<div class="col-sm-2" style="text-align: center;"><h5>Copyright &copy; 2018</h5><h5>최선희 성유림</h5><h5>푸트리 신티아 정지범</h5></div>
+						<div class="col-sm-4"><h4>만든이 소개</h4><p>오픈소스 1조 자바칩프라푸치노 팀원들 입니다.</p></div>
+						<div class="col-sm-4"><h4 style="text-align: center;"></h4>
+							<div class="list-group">
+								<a href="index.html" class="list-group-item">소개</a>
+								<a href="instructor.html" class="list-group-item">개발자들</a>
+								<a href="#" class="list-group-item">쇼핑몰</a>
+							</div>
+						</div>
+						<div class="col-sm-2"><h4 style="text-align: center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;by 자바칩푸라프치노</h4></div>
+					</div>
+				</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>
