@@ -146,55 +146,20 @@
 					&nbsp;&nbsp;쇼핑몰 상품 리스트</h3>
 				</div>
 				<div class="panel-body">
+          <?php
+          $query = "select * from product ";
+          $res = $db -> query($query);
+          while ($row = mysqli_fetch_array($res)) {?>
 					<div class="media">
 						<div class="media-left">
-							<a href="#"><img class="media-object" src="images/shop.png" alt="검색된 상품"></a>
+							"<a href="<?php echo $row["product_link"]?>"><img class="media-object" src="<?php echo $row["product_image"];?>" alt="검색된 상품"></a>
 						</div>
 						<div class="media-body">
-							<h4 class="media-heading"><a href="#">크롤링 및 스크래핑 되어진 상품_1</a>&nbsp;<span class="badge">New</span></h4>
-							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
+							<h4 class="media-heading"><a href="<?php echo $row["product_link"];?>"><?php echo $row["product_name"];?></a>&nbsp;<span class="badge">New</span></h4>
+							<?php echo $row["product_price"];?>
 						</div>
-					</div>
-				<!--	<hr>
-					<div class="media">
-						<div class="media-left">
-							<a href="#"><img class="media-object" src="images/shop.png" alt="검색된 상품"></a>
-						</div>
-						<div class="media-body">
-							<h4 class="media-heading"><a href="#">크롤링 및 스크래핑 되어진 상품_2</a>&nbsp;<span class="badge">New</span></h4>
-							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
-						</div>
-					</div>
-					<hr>
-					<div class="media">
-						<div class="media-left">
-							<a href="#"><img class="media-object" src="images/shop.png" alt="검색된 상품"></a>
-						</div>
-						<div class="media-body">
-							<h4 class="media-heading"><a href="#">크롤링 및 스크래핑 되어진 상품_3</a>&nbsp;<span class="badge">New</span></h4>
-							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
-						</div>
-					</div>
-					<hr>
-					<div class="media">
-						<div class="media-left">
-							<a href="#"><img class="media-object" src="images/shop.png" alt="검색된 상품"></a>
-						</div>
-						<div class="media-body">
-							<h4 class="media-heading"><a href="#">크롤링 및 스크래핑 되어진 상품_4</a>&nbsp;<span class="badge">New</span></h4>
-							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
-						</div>
-					</div>
-					<hr>
-					<div class="media">
-						<div class="media-left">
-							<a href="#"><img class="media-object" src="images/shop.png" alt="검색된 상품"></a>
-						</div>
-						<div class="media-body">
-							<h4 class="media-heading"><a href="#">크롤링 및 스크래핑 되어진 상품_5</a>&nbsp;<span class="badge">New</span></h4>
-							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
-						</div>
-					</div>-->
+				<?php echo	"</div>";
+      }?>
 				</div>
 			</div>
 		</div>
