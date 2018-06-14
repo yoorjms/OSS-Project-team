@@ -16,11 +16,13 @@ element = driver.find_element_by_name("prize1")
 driver.execute_script("arguments[0].value = '티';",element)
 driver.find_element_by_xpath("""//*[@id="search_form"]/fieldset/div/table/tbody/tr[2]/td/a""").click()
 
+
+
 posts = driver.find_elements_by_class_name("MS_prod_img_s")
 for post in posts:
     print(post.get_attribute('src'))
 
-nametemp = post.get('')
+
 
 #search_form.send_keys('티')
 # search_form.submit()

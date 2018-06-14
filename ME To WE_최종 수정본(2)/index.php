@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width", initial-scale="1">
@@ -8,6 +8,11 @@
 		<link rel="stylesheet" href="css/codingBooster.css">
 	</head>
 	<body>
+    <?php
+    $db = mysqli_connect("localhost","root","","shop");
+    $db -> set_charset('utf8');
+    ?>
+
 		<style type="text/css">
 			.jumbotron{
 				background-image: url('images/boostrapBackground.jpg');
@@ -36,11 +41,15 @@
 	    	    				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
 	    	    					aria-haspopup="true" aria-expanded="false">쇼핑몰<span class="caret"></span></a>
 	    	    				<ul class="dropdown-menu">
-	    	    					<li><a href="#">shoppingmall_1</a></li>
-	    	    					<li><a href="#">shoppingmall_2</a></li>
-	    	    					<li><a href="#">shoppingmall_3</a></li>
-	    	    					<li><a href="#">shoppingmall_4</a></li>
-	    	    					<li><a href="#">shoppingmall_5</a></li>
+                      <?php
+                      $query =  "select mall_name from shopping_mall";
+                      $res = $db -> query($query);
+
+                      while ($row=mysqli_fetch_array($res))
+                      {
+                          ?> <li><a href="#"> <?php echo $row["mall_name"]; ?></a></li><?php
+                      }
+                      ?>
 	    	    				</ul>
 	    	    			</li>
 	    	    	</ul>
@@ -57,7 +66,7 @@
 	    	    				<ul class="dropdown-menu">
 	    	    					<li><a href="loginForm.html">로그인</a></li>
 	    	    					<li><a href="registerForm.html">회원가입</a></li>
-	    	    					
+
 	    	    				</ul>
 	    	    		</li>
 	    	    	</ul>
@@ -93,41 +102,41 @@
 				<h4>쇼핑몰 선택 목록</h4>
 				<div class="form-check">
 					<label>
-						<input type="checkbox" name="check" checked> <span class="label-text">쇼핑몰 01</span>
+						<input type="checkbox" name="check" checked> <span class="label-text">오까네(공용)</span>
 					</label>
 				</div>
 				<div class="form-check">
 					<label>
-						<input type="checkbox" name="check"> <span class="label-text">쇼핑몰 02</span>
+						<input type="checkbox" name="check"> <span class="label-text">4xr(남성)</span>
 					</label>
 				</div>
 				<div class="form-check">
 					<label>
-						<input type="checkbox" name="check"> <span class="label-text">쇼핑몰 03</span>
+						<input type="checkbox" name="check"> <span class="label-text">CANMART(여성)</span>
 					</label>
 				</div>
 				<div class="form-check">
 					<label>
-						<input type="checkbox" name="check"> <span class="label-text">쇼핑몰 04</span>
+						<input type="checkbox" name="check"> <span class="label-text">everfree(남성)</span>
 					</label>
 				</div>
-				<div class="form-check">
+				<!--<div class="form-check">
 					<label>
 						<input type="checkbox" name="check"> <span class="label-text">쇼핑몰 05</span>
 					</label>
-				</div>
+				</div>-->
 			</form>
 
 		</div>
 <!--</div>-->
 							<!--<h4>쇼핑몰 구성</h4>
 							<p>여성과 남성 모두가 사용 가능한 여러개의 쇼핑몰이 구성되어 있습니다. 제공 된 쇼핑몰 중에서 자신이 원하는 쇼핑몰 한해서 검색이 가능합니다.</p>-->
-							
+
 					<!--</div>-->
 					<!--<div class="col-md-4">
 							<h4>쇼핑몰 사이트</h4>
 							<p>관리자가 직접 쇼핑몰 사이트를 방문하고 선정하여 사용자는 안전하게 원하는 상품을 비교할 수 있습니다.</p>
-							
+
 					</div>-->
 			</div>
 			<hr>
@@ -146,7 +155,7 @@
 							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
 						</div>
 					</div>
-					<hr>
+				<!--	<hr>
 					<div class="media">
 						<div class="media-left">
 							<a href="#"><img class="media-object" src="images/shop.png" alt="검색된 상품"></a>
@@ -185,7 +194,7 @@
 							<h4 class="media-heading"><a href="#">크롤링 및 스크래핑 되어진 상품_5</a>&nbsp;<span class="badge">New</span></h4>
 							사용자가 검색한 상품들을 쇼핑몰 별로 크롤링 및 스크래핑 하여 비교할수 있게끔 보여준다.
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
