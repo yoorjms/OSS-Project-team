@@ -140,7 +140,7 @@
 					</div>-->
 			</div>
 			<hr>
-			<div class="panel panel-primary">
+			<div class="panel panel-primary" style="overflow:scroll; height:1000px;">
 				<div class="panel-heading">
 					<h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>
 					&nbsp;&nbsp;쇼핑몰 상품 리스트</h3>
